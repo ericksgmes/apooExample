@@ -1,10 +1,10 @@
 package org.example;
 
+import java.util.Objects;
+
 public final class FileRemover {
     public void remove(FileSystem node) {
-        if (node == null) {
-            throw new IllegalArgumentException("node cannot be null");
-        }
+        Objects.requireNonNull(node, "node cannot be null");
         node.delete();
     }
 }
