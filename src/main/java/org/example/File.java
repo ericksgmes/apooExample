@@ -14,9 +14,4 @@ public final class File implements FileSystem {
     public void delete() {
         System.out.println("Deleting file: " + filename);
     }
-
-    @Override
-    public void printStructure() {
-        System.out.println(filename);
-    }
 }

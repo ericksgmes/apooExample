@@ -23,14 +23,6 @@ public final class Directory implements FileSystem {
         }
     }
 
-    @Override
-    public void printStructure() {
-        System.out.println(directoryName + "/");
-        for (FileSystem child : children) {
-            child.printStructure();
-        }
-    }
-
     public void add(FileSystem... nodes) {
         children.addAll(Arrays.asList(nodes));
     }
