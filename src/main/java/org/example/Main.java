@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Cliente cliente = new Cliente();
+        FileRemover fileRemover = new FileRemover();
 
         Directory apoo = new Directory("apoo");
         File file1 = new File("Refactoring.md");
@@ -12,8 +12,8 @@ public class Main {
 
         apoo.add(file1, file2, file3);
 
-        cliente.rmrf(file4);
+        fileRemover.remove(file4);
 
-        cliente.rmrf(apoo);
+        fileRemover.remove(apoo);
     }
 }

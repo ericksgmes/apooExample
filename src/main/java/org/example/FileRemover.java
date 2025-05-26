@@ -1,7 +1,7 @@
 package org.example;
 
-public final class Cliente {
-    public void rmrf(FileSystem node) {
+public final class FileRemover {
+    public void remove(FileSystem node) {
         if (node == null) {
             throw new IllegalArgumentException("node cannot be null");
         }
