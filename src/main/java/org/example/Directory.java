@@ -45,6 +45,15 @@ public final class Directory implements FileSystem {
         System.out.print("\n");
     }
 
+    @Override
+    public void printContents() {
+        System.out.println("\nPrinting contents of directory " + directoryName + ":");
+        for (FileSystem child : children) {
+            System.out.print("  ");
+            child.printContents();
+        }
+    }
+
     public int getSize() {
         int total = 0;
         for (FileSystem child : children) {

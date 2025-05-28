@@ -24,6 +24,7 @@ public final class File implements FileSystem {
         System.out.println("File: " + filename);
     }
 
+    @Override
     public void printContents() {
         System.out.println("\nContents of: " + filename + ": " + contents);
         System.out.print("\n");
