@@ -1,4 +1,4 @@
-package org.example;
+package org.example.composite;
 
 public interface FileSystem {
     void delete();

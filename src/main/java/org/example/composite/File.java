@@ -1,4 +1,4 @@
-package org.example;
+package org.example.composite;
 
 import java.nio.charset.StandardCharsets;
 
