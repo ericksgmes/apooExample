@@ -22,8 +22,3 @@ classDiagram
 - Baixa testabilidade (dificil mockar)
 - Alto acoplamento
 - Menor escalabilidade
-
-
-
-
-
